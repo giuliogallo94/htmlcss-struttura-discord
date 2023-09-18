@@ -7,7 +7,7 @@
 
 :root {
     --section-height: 400px;
-    --inner-div-height: 300px;
+    --inner-div-height: 335px;
     --border-2: 2px dashed black;
     --border-3: 3px dashed black;
     --white-bg: white;
@@ -16,9 +16,8 @@
 } 
 /* BODY */
 body {
-    background-color: var(--lightgrey-bg);
+    background-color:#0e0e11;
     margin: 0 auto;
-    background-color: violet;
 }
 
 /* HEADER */
@@ -73,15 +72,16 @@ li {
 /* Title */
 .title {
     background-color: #00008b;
-    min-height: var(--section-height);
-    padding-top: 2.5rem;
+    min-height: 335px;
+    display: flex;
+    align-items: center;
 }
 
 .violet-box {
     background-color: violet;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
-    min-height: var(--inner-div-height);
+    min-height: 270px;
     border: var(--border-2);
 }
 
@@ -90,7 +90,8 @@ li {
     min-height: var(--section-height);
     width: var(--width);
     margin: 0 auto;
-    padding-top: 2.5rem;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -102,8 +103,8 @@ li {
     background-color: var(--lightgrey-bg);
 }
 
-.left-bigger {
-    width: 75%;
+.inner-div {
+    width: 65%;
     min-height: var(--inner-div-height);
     margin: 0 auto;
     display: flex;
@@ -128,4 +129,37 @@ li {
 
 .border-right {
     border-right: var(--border-3);
+}
+
+.bigger-section {
+    min-height: 700px;
+    width: var(--width);
+    margin: 0 auto;
+    /* padding-top: 2.5rem; */
+    display: flex;
+    align-items: center;
+}
+
+.green-square {
+    width: 65%;
+    min-height: 650px;
+    margin: 0 auto;
+    display: flex;
+    border: var(--border-2);
+    background-color: forestgreen;
+}
+
+.dark {
+    background-color: #23272a;
+}
+
+.lightseagreen {
+    background-color: #20b2aa;
+    border: 1px dashed white;
+    width: calc(70% / 4);
+}
+
+.lightcoral {
+    background-color: #f08080;
+    width: 30%;
 }
