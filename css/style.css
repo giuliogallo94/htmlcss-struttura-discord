@@ -1,5 +1,60 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --nav-sec-bg: #daa520;
+}
+
+/* BODY */
+body {
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+/* Navbar */
+.top-page {
+    height: 80px;
+    background-color: #add8e6;
+    padding: 1rem;
+} 
+
+.navbar {
+    background-color: var(--nav-sec-bg);
+    width: 70%;
+    margin: 0 auto;
+    border: 2px dashed black;
+    display: flex;
+
+}
+
+.logo {
+    width: 25%;
+    padding: 0.35rem;
+}
+
+.links {
+    width: 50%; 
+    border-left: 3px dashed black;
+    border-right: 3px dashed black;
+    text-align: center;
+    padding: 0.35rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+.login {
+    width: 25%;
+    text-align: right;
+    padding: 0.35rem;
 }
