@@ -7,17 +7,23 @@
 
 :root {
     --section-height: 400px;
-    --border: 2px dashed black;
+    --inner-div-height: 300px;
+    --border-2: 2px dashed black;
+    --border-3: 3px dashed black;
+    --white-bg: white;
+    --lightgrey-bg: lightgrey;
+    --width: 75%;
 } 
 /* BODY */
 body {
-    background-color: #ee82ee;
+    background-color: var(--lightgrey-bg);
     margin: 0 auto;
+    background-color: violet;
 }
 
 /* HEADER */
 header {
-    width: 75%;
+    width: var(--width);
     margin: 0 auto;
 }
 
@@ -32,7 +38,7 @@ header {
     background-color: #daa520;
     width: 70%;
     margin: 0 auto;
-    border: var(--border);
+    border: var(--border-2);
     display: flex;
     font-size: x-small;
 }
@@ -44,8 +50,8 @@ header {
 
 .links {
     width: 50%; 
-    border-left: 3px dashed black;
-    border-right: 3px dashed black;
+    border-left: var(--border-3);
+    border-right: var(--border-3);
     text-align: center;
     padding: 0.35rem;
 }
@@ -71,10 +77,55 @@ li {
     padding-top: 2.5rem;
 }
 
-.pink-box {
-    background-color: #ee82ee;
+.violet-box {
+    background-color: violet;
     width: 60%;
     margin: 0 auto;
-    min-height: 300px;
-    border: var(--border);
+    min-height: var(--inner-div-height);
+    border: var(--border-2);
+}
+
+/* MAIN */
+.section {
+    min-height: var(--section-height);
+    width: var(--width);
+    margin: 0 auto;
+    padding-top: 2.5rem;
+
+}
+
+.white-bg {
+    background-color: var(--white-bg);
+}
+
+.lightgrey-bg {
+    background-color: var(--lightgrey-bg);
+}
+
+.left-bigger {
+    width: 75%;
+    min-height: var(--inner-div-height);
+    margin: 0 auto;
+    display: flex;
+    border: var(--border-2);
+}
+
+.bigger {
+    width: 60%;
+}
+
+.smaller {
+    width: 40%;
+}
+
+.lightblue {
+    background-color: #1e90ff;
+}
+
+.pink {
+    background-color: #ffc0cb;
+}
+
+.border-right {
+    border-right: var(--border-3);
 }
